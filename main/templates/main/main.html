@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style_main.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="for-flex">
+            <div class="left">
+                <h2>Welcome To</h2>
+                <h1>TRIDENT
+                    <span id='text'></span>
+                    <span class='console-underscore' id='console'>|</span>
+                </h1>
+                <h4>Discover limitless possibilities and embrace top-tier community and environment, enhancing urban living for a smarter, better life. Join us in shaping a brighter future.</h4>
+                <div class="buttons">
+                    <div class="customer">
+                        <img src="{% static 'images/MyApril10.jpg' %}" alt="Error" class="customer-imag">
+                        <h3>Customer</h3>
+                        <button class="enter">
+                            <a href="{% url 'main:index_main' %}">
+                                <img src="{% static 'images/enter.png' %}" alt="Error" class="enter-btn">
+                            </a>
+                        </button>
+                    </div>
+                    <div class="worker">
+                        <img src="{% static 'images/worker_main_page.jpg' %}" alt="Error" class="worker-imag">
+                        <h3>Worker</h3>
+                        <button class="enter">
+                            <a href="{% url 'register' %}">
+                                <img src="{% static 'images/enter.png' %}" alt="Error" class="enter-btn">
+                            </a>
+                            
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="{% static 'images/landing_page_right.jpg' %}" alt="Error" class="logo-right">
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/newscript.js'%}"></script>
+</body> 
+</html>

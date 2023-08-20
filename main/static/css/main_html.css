@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.customer,.worker{
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+h3{
+    font-size: 2rem;
+}
+button{
+    cursor: pointer;
+}
+.customer_logo,.worker_logo{
+    width: 200px;
+}
+.enter_logo{
+    width: 50px;
+    height: 40px;
+}

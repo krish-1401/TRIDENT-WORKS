@@ -1,0 +1,176 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree&family=Libre+Baskerville&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="nav-bar">
+            <div class="nav-left">
+                <img src="{% static 'images/trident works-fotor-bg-remover-20230818221358.png' %}" alt="Error" class="web-logo">
+            </div>
+            <div class="nav-right">
+                <div class="home">
+                    <a href="{% url 'main:index_main' %}">Home</a>
+                </div>
+                <div class="about">
+                    <a href="{% url 'main:about' %}">
+                        Our Team
+                    </a>
+                </div>
+                <div class="services">
+                    <a href="#bokmark">
+                        Services
+                    </a>
+                </div>
+            </div>
+        </div>
+        <main class="target">
+            <img src="{% static 'images/background_urbanization.jpg' %}" alt="Error" class="check_bg">
+            <div class="target-content">
+                <h1>Trident Works</h1>
+                <h3>Local Service Provider</h3>
+                <ul>
+                    <li>Efficient platform for seamless experience.</li>
+                    <li>Enables seamless connections between service providers.</li>
+                    <li>Boosts urban efficiency through seamless service exchange.</li>
+                </ul>
+            </div>
+        </main>
+        <div class="down-arrow">
+            <a href="#bokmark">
+                <span><img src="{% static 'images/down-arrow_4196575-fotor-bg-remover-2023081922578.png' %}" alt="" class="arrow1"></span>
+                <span><img src="{% static 'images/down-arrow_4196575-fotor-bg-remover-2023081922578.png' %}" alt="" class="arrow2"></span>
+                <span><img src="{% static 'images/down-arrow_4196575-fotor-bg-remover-2023081922578.png' %}" alt="" class="arrow3"></span>        
+            </a>
+        </div>
+        <div class="hexagons-for-workers" >
+            <img src="{% static 'images/abstract_1.webp' %}" alt="Error" class="wallpaper-gif">
+            <main class="text-head-" id="bokmark">Our Services</main>
+            
+            <main class="tytytyty" >
+                <div class="cleaner-card cards">
+                    <img src="{% static 'images/cleaner_stick.jpg' %}" alt="Error">
+                    <h3>Cleaner works magic, turning messy into marvelous, so you can stay in a fresh paradise</h3>
+                </div>
+                <div class="cook-card cards">
+                    <img src="{% static 'images/chef_stick.jpg' %}" alt="Error">
+                    <h3>A culinary maestro, chef conjures delectable wonders, crafting a feast that dances on taste buds.</h3>
+                </div>
+                <div class="plumber-card cards">
+                    <img src="{% static 'images/plumber_stick.jpg' %}" alt="Error">
+                    <h3>A plumbing expert, plumber turns pipe predicaments into harmonious flows, ensuring seamless comfort in every drop.</h3>
+                </div>
+                <div class="electrician-card cards">
+                    <img src="{% static 'images/electrician_stick.jpg' %}" alt="Error">
+                    <h3>An electrical virtuoso, electrician illuminates spaces with skill, sparking a symphony of power and light.</h3>
+                </div>
+                <div class="carpenter-card cards">
+                    <img src="{% static 'images/carpenter_stick.jpg' %}" alt="Error">
+                    <h3>A woodworking virtuoso, carpenter shapes dreams into reality, crafting creations that bring spaces to life.</h3>
+                </div>
+                <main class="third-tab">
+                    <a href="{% url 'main:cleaner' %}">
+                        <main class="hexagon first-hex">
+                            <div class="for-flex">
+                                <img src="{% static 'images/bucket_2946608.png'%}" alt="Error" height="50px" style="margin-top:15px">
+                                <span class="overlay cleaner-text">CLEANER</span>
+                            </div>
+                        </main>
+                    </a>
+                    <a href="{% url 'main:cook' %}">
+                        <main class="hexagon second-hex">
+                            <div>
+                                <img src="{% static 'images/chef_450166.png'%}" alt="Error" height="50px" style="margin-top:15px; margin-left: 75px;">
+                                <span class="overlay cook-text">COOK</span>
+                            </div>
+                        </main>
+                    </a>
+                    <a href="{% url 'main:plumber' %}">
+                        <main class="hexagon third-hex">
+                            <div>
+                                <img src="{% static 'images/plumber_3125480.png'%}" alt="Error" height="50px" style="margin-top:15px; margin-left: 75px;">
+                                <span class="overlay plumber-text">PLUMBER</span>
+                            </div>
+                        </main>
+                    </a>
+                </main>
+                <main class="forth-tab">
+                    <a href="{% url 'main:elec' %}">
+                        <main class="hexagon forth-hex">
+                            <div>
+                                <img src="{% static 'images/electrician_3707167.png'%}" alt="Error" height="50px" style="margin-top:15px; margin-left: 75px;">
+                                <span class="overlay electrician-text">ELECTRICIAN</span>
+                            </div>
+                        </main>
+                    </a>
+                    <a href="{% url 'main:carp' %}">
+                        <main class="hexagon fifth-hex">
+                            <div>
+                                <img src="{% static 'images/carpentry_939584.png'%}" alt="Error" height="50px" style="margin-top:15px; margin-left: 75px;">
+                                <span class="overlay carpenter-text">CARPENTER</span>
+                            </div>
+                        </main>
+                    </a>                    
+                </main>                
+            </main>
+        </div>
+        <!-- ---------------------------------- -->
+        <div class="secondlastbar">
+            <div class="sl1">
+                <a href="{% url 'main:index_main' %}">
+                    <img src="{% static 'images/trident works-fotor-bg-remover-20230818221358.png' %}" alt="Error" class="last-left-logo">
+                </a>
+            </div>
+            <div class="sl2">
+                <h2>Connect</h2>
+                <ul>
+                    <li><img src="{% static 'images/location.png' %}" alt="Error" class="location-imag"> 
+                        <a href="https://www.google.com/maps/place/Vellore+Institute+of+Technology/@12.9456387,79.1297649,14z/data=!4m10!1m2!2m1!1svit+vellore!3m6!1s0x3bad479f0ccbe067:0xfef222e5f36ecdeb!8m2!3d12.9692232!4d79.1559336!15sCgt2aXQgdmVsbG9yZSIDiAEBkgEScHJpdmF0ZV91bml2ZXJzaXR54AEA!16zL20vMDZzcHNo?entry=ttu">VIT Vellore</a>
+                        </li>
+                    <li>+1111111111</li>
+                    <li>tridentworks@gmail.com</li> 
+                </ul>
+            </div>
+            <div class="sl3">
+                <h2>Content</h2>
+                <ul>
+                    <li><a href="#Bokmark">Home</a> </li>
+                    <li>Our Team</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+        </div>
+        <div class="lastbar">
+            <div class="last_leftbar">
+                <div class="copyright">&copy; 2023 Your Website. All rights reserved.</div>
+                <div><a href="https://www.privacypolicies.com/live/551059e9-d791-45ba-b5b6-def0868537fc" target="_blank">Privacy Policy</a></div>
+                <div><a href="https://www.termsandconditionsgenerator.com/live.php?token=CcJUNB79ZpXvCmtgsplWDgNlb7PsClnG" target="_blank">Terms & conditions</a></div>
+            </div>
+            <div class="last_rightbar">
+                <a href="">
+                    <img src="{% static 'images/fb.png' %}" alt="Error">
+                </a>
+                <a href="">
+                    <img src="{% static 'images/twit.png' %}" alt="Error">
+                </a>
+                <a href="">
+                    <img src="{% static 'images/li.png' %}" alt="Error">
+                </a>
+            </div>
+        </div>
+    </div>   
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

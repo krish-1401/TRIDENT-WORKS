@@ -1,0 +1,83 @@
+<!-- {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style_electrician.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="top-left">
+                <a href="{% url 'main:index_main' %}" class="prev-page"><p>&larr; Prev. Page</p></a>
+            </div>
+        </div>
+        {% for item in elec_list %}
+        <div class="cleaners-first-row">
+            <div class="cleaner-1">
+                <div class="cleaner-left">
+                    <h1 class="name">{{ item.user_name.username }}</h1>
+                    <div class="age">Age: <span>24</span></div>
+                    <div class="state">State: <span>Haryana</span> </div>
+                    <div class="rating">Rating: <span>4.7</span></div>
+                    <button class="contact">Book Appointment</button>
+                </div>
+                <div class="cleaner-right">
+                    <img src="{% static 'images/electrician-1.jpeg' %}" alt="Error" height="200px">
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div> 
+    
+</body>
+</html> -->
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style_electrician.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="top-left">
+                <a href="{% url 'main:index_main' %}" class="prev-page"><p>&larr; Prev. Page</p></a>
+            </div>
+        </div>
+        <div class="cleaners">
+            {% for item in elec_list %}
+            <div class="cleaner-1">
+                <div class="cleaner-right">
+                    <img src="{{ item.imageURL }}" alt="Error" height="200px">
+                </div>
+                <div class="cleaner-left">
+                    <h1 class="name" style="font-size: 2.5rem;">{{item.user_name.username}}</h1>
+                    <div class="money">Gender- {{item.gender}}<span></span></div>
+                    <div class="age">Age- {{item.age}} <span></span></div>
+                    <div class="mobile_no">Contact- {{item.mobile}}<span></span></div>
+                    <div class="city">City- {{item.city}}<span></span></div>
+                    <div class="money">Fees- ₹{{item.fees}}<span></span></div><br>
+                    <button class="contact">Book Appointment</button>
+                </div>
+            </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+</body>
+</html>

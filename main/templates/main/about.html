@@ -1,0 +1,223 @@
+<!-- {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style_about.css' %}">
+    
+    <title>About Us</title>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="nav-bar">
+            <div class="nav-left">
+                <img src="{% static 'images/trident works-fotor-bg-remover-20230818221358.png' %}" alt="Error" class="web-logo">
+            </div>
+            <div class="nav-right">
+                <div class="home">
+                    <a href="{% url 'main:index_main' %}">Home</a>
+                </div>
+                <div class="about">
+                    <a href="{% url 'main:about' %}">
+                        Our Team
+                    </a>
+                </div>
+                <div class="services">
+                    <a href="#bokmark">
+                        Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <section id="aboutus">
+                <h1>About Us</h1>
+                <p>Welcome to our team's website! We are a group of passionate individuals...</p>
+            
+        </section>
+    
+        <section id="team">
+            <div class="container">
+                <h1>Our Team</h1>
+                <div class="people">
+                    <div class="team-member">
+                        <img src="{% static 'images/krish.jpg' %}" alt="Team Member 1">
+                        <h2>Krish Chitlangia</h2>
+                        <p>Role: Backend Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="{% static 'images/avinash.jpg' %}" alt="Team Member 2">
+                        <h2>Avinash Krishnan</h2>
+                        <p>Role: Frontend Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="{% static 'images/krish.jpg' %}" alt="Team Member 3">
+                        <h2>Krish Chitlangia</h2>
+                        <p>Role: Backend Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="{% static 'images/avinash.jpg' %}" alt="Team Member 4">
+                        <h2>Avinash Krishnan</h2>
+                        <p>Role: Frontend Developer</p>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    
+        <section id="contact">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>If you have any questions or inquiries, feel free to contact us at <a href="mailto:info@example.com">info@example.com</a>.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html> -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style_about.css' %}">
+    
+    <title>About Us</title>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="nav-bar">
+            <div class="nav-left">
+                <img src="{% static 'images/trident works-fotor-bg-remover-20230818221358.png' %}" alt="Error" class="web-logo">
+            </div>
+            <div class="nav-right">
+                <div class="home">
+                    <a href="{% url 'main:index_main' %}">Home</a>
+                </div>
+                <div class="about">
+                    <a href="{% url 'main:about' %}">
+                        Our Team
+                    </a>
+                </div>
+                <div class="services">
+                    <a href="{% url 'main:index_main' %}">
+                        Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <section id="aboutus">
+                <h1>About Us</h1>
+                <p>Welcome to our team's website! We are a group of passionate individuals...</p>
+            
+        </section>
+    
+        <section id="team">
+            <div class="container">
+                <h1 class="our_team">Our Team</h1>
+                <div class="people">
+                    <div class="left">
+                        <div class="team-member">
+                            <img src="{% static 'images/krish.jpg' %}" alt="Team Member 1" class="ourimg krish">
+                            <h2>Krish Chitlangia</h2>
+                            <p>Role: Backend Developer</p>
+                            <div class="card1">
+                                <div class="insta">
+                                    <a href="www.instagram.com">
+                                        <img src="/static/images/instagram.png" alt="Error" class="imagportion" id="insta">
+                                    </a>
+                                </div>
+                                <div class="linkedin">
+                                    <a href="www.linkedin.com">
+                                        <img src="/static/images/linkedin.png" alt="Error" class="imagportion" id="twitt">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <img src="{% static 'images/arjun.jpg' %}" alt="Team Member 4" class="ourimg arjun">
+                            <h2>Arjun Tyagi</h2>
+                            <p>Role: Design and Development</p>
+                            <div class="card2">
+                                <div class="insta">
+                                    <a href="">
+                                        <img src="/static/images/instagram.png" alt="Error" class="imagportion" id="insta">
+                                    </a>
+                                </div>
+                                <div class="linkedin">
+                                    <a href="">
+                                        <img src="/static/images/linkedin.png" alt="Error" class="imagportion" id="twitt">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <img src="{% static 'images/logo_cube.png' %}"alt="Error" class="logo-cube">
+                    <div class="right">
+                        <div class="team-member">
+                            <img src="{% static 'images/avinash.jpg' %}" alt="Team Member 2" class="ourimg avinash">
+                            <h2>Avinash Krishnan</h2>
+                            <p>Role: Frontend Developer</p>
+                            <div class="card3">
+                                <div class="insta">
+                                    <a href="">
+                                        <img src="/static/images/instagram.png" alt="Error" class="imagportion" id="insta">
+                                    </a>
+                                </div>
+                                <div class="linkedin">
+                                    <a href="">
+                                        <img src="/static/images/linkedin.png" alt="Error" class="imagportion" id="twitt">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team-member">
+                            <img src="{% static 'images/aryan.jpg' %}" alt="Team Member 3" class="ourimg aryan">
+                            <h2>Aryan Tyagi</h2>
+                            <p>Role: Product Manager</p>
+                            <div class="card4">
+                                <div class="insta">
+                                    <a href="">
+                                        <img src="/static/images/instagram.png" alt="Error" class="imagportion" id="insta">
+                                    </a>
+                                </div>
+                                <div class="linkedin">
+                                    <a href="">
+                                        <img src="/static/images/linkedin.png" alt="Error" class="imagportion" id="twitt">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="contact">
+            <div class="container">
+                <h1 class="con">Contact Us</h1>
+                <p>If you have any questions or inquiries, feel free to contact us at <a href="mailto:info@example.com">info@example.com</a>.</p>
+            </div>
+        </section>
+    </div>
+   
+    <script src="{% static 'js/script-about.js' %}"></script>
+</body>
+</html>
